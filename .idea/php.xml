@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="C:/xampp/php" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/composer" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/d11wtq/boris" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/stack/builder" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/patchwork/utf8" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/classpreloader/classpreloader" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/kylekatarnls/update-helper" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/Zeltas/vendor/ircmaxell/password-compat" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+</project>
