@@ -1,6 +1,6 @@
 <?php
-session_start();
 
-unset($_SESSION["user"]);
+setcookie('user', $user['username'], time() - 3600, '/');
 
-header('Location: '."/");
+header('Location: /');
+

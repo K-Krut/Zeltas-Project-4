@@ -39,7 +39,15 @@ session_start();
                     <li><a class="menu-item" href="delivery.php">Delivery</a></li>
                     <li><a class="menu-item" href="contact.php">Contact</a></li>
                     <li><a class="menu-item" href="about.php">About</a></li>
-                    <li><a class="menu-item" href="login.php">Login</a></li>
+                    <li><a class="menu-item" href="login.php">
+                            <?php
+                            if ($_COOKIE['user'] == ''):
+                                ?>
+                                Login
+                            <?php else: ?>
+                                Log Out
+                            <?php endif; ?>
+                        </a></li>
                 </ul>
             </div>
             <li><a href="catalogue.php" class="icon catalog-icon"></a></li>
@@ -56,23 +64,40 @@ session_start();
 <div class="body-class">
     <div class="login-wrap">
         <div class="login-html">
-            <label class="tab">Sign In</label>
-            <a href="register.php"><label class="tab">Register</label></a>
-            <div class="login-form">
-                <div class="sign-in-htm">
-                    <div class="group">
-                        <label for="user" class="label">Email/Username</label>
-                        <input style="opacity: .4;" id="user" type="text" class="input">
+            <?php
+            if ($_COOKIE['user'] == ''):
+                ?>
+                <label class="tab">Sign In</label>
+                <a href="register.php"><label class="tab">Register</label></a>
+                <form class="login-form" action="views/loginization.php" method="post">
+                    <div class="sign-in-htm">
+                        <div class="group">
+                            <label class="label">Email Address</label>
+                            <input style="width: 100%; color: #c1b2a0; display: block;border: none;padding: 15px 20px;
+                        border-radius: 25px; background-color: #634f4b; opacity: .4; z-index: 100;"
+                                   type="email" name="email" id="email">
+                        </div>
+                        <div class="group">
+                            <label class="label">Password</label>
+                            <input style="width: 100%; color: #c1b2a0; display: block;border: none;padding: 15px 20px;
+                        border-radius: 25px; background-color: #634f4b; opacity: .4; z-index: 100;"
+                                   type="password" name="password_1" id="password_1">
+                        </div>
+                        <div class="group" style="margin-top: 30px">
+                            <input type="submit" class="button" value="Sign In">
+                        </div>
                     </div>
-                    <div class="group">
-                        <label for="pass" class="label">Password</label>
-                        <input style="opacity: .4;" id="pass" type="password" class="input" data-type="password">
+                </form>
+            <?php else: ?>
+                <label class="tab" style="text-align: center">Hi <?= $_COOKIE['user'] ?></label>
+                <form class="login-form" action="views/loginization.php" method="post">
+                    <div class="sign-in-htm">
+                        <div class="group" style="margin-top: 30px">
+                            <input type="submit" class="button" formaction="views/logout.php" value="Log out">
+                        </div>
                     </div>
-                    <div class="group" style="margin-top: 30px">
-                        <input type="submit" class="button" value="Sign In">
-                    </div>
-                </div>
-            </div>
+                </form>
+            <?php endif; ?>
         </div>
     </div>
 </div>
